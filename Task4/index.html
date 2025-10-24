@@ -33,28 +33,32 @@
                 <button id="addProductBtn" type="button">Thêm sản phẩm</button>
             </div>
 
+            <!-- Form thêm sản phẩm mới -->
             <form id="addProductForm" class="hidden" action="#" method="post" aria-label="Form thêm sản phẩm">
+                <h3>Thêm sản phẩm mới</h3>
                 <div>
-                    <label for="pname">Tên sản phẩm</label>
-                    <input type="text" id="pname" name="pname" placeholder="Nhập tên sản phẩm" required> <!-- Bắt buộc -->
+                    <label for="newName">Tên sản phẩm:</label>
+                    <input type="text" id="newName" placeholder="Nhập tên sản phẩm" required>
                 </div>
                 <div>
-                    <label for="pdesc">Mô tả</label>
-                    <textarea id="pdesc" name="pdesc" rows="3" placeholder="Mô tả ngắn"></textarea>
+                    <label for="newPrice">Giá:</label>
+                    <input type="number" id="newPrice" placeholder="VD: 199000" min="1" step="1" required>
                 </div>
                 <div>
-                    <label for="pprice">Giá (₫)</label>
-                    <input type="text" id="pprice" name="pprice" placeholder="VD: 199.000">
+                    <label for="newDesc">Mô tả:</label>
+                    <textarea id="newDesc" rows="3" placeholder="Mô tả ngắn"></textarea>
                 </div>
                 <div>
-                    <label for="pimg">Ảnh (URL)</label>
-                    <input type="text" id="pimg" name="pimg" placeholder="https://...">
+                    <label for="newImg">Ảnh (URL):</label>
+                    <input type="url" id="newImg" placeholder="https://...">
                 </div>
-                <div>
-                    <button type="submit">Lưu sản phẩm</button>
+                <div style="display:flex; gap:.5rem; flex-wrap:wrap;">
+                    <button type="submit">Thêm</button>
+                    <button type="button" id="cancelBtn">Hủy</button>
                 </div>
+                <p id="errorMsg" style="color:#ff6b6b; font-weight:600; margin: .25rem 0 0; min-height:1.25rem;"></p>
             </form>
-            <div class="products">
+            <div id="product-list" class="products">
                 <article class="product-item">
                     <img src="https://cdn-media.sforum.vn/storage/app/media/wp-content/uploads/2023/08/genshin-impact-cung-menh-thap-manh-nhat-6.jpg" alt="GI">
                     <h3 class="product-name">Genshin Impact</h3>

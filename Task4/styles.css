@@ -94,6 +94,8 @@ label {
 
 input[type="text"],
 input[type="email"],
+input[type="number"],
+input[type="url"],
 textarea {
 	padding: 0.5rem;
 	border: 1px solid rgba(255, 255, 255, 0.08);

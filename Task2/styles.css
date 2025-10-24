@@ -8,6 +8,7 @@
 body {
 	margin: 0; 
 	line-height: 1.5;
+	/* linear-gradient: tác dụng: tạo hiệu ứng chuyển màu mượt mà cho nền */
 	background: linear-gradient(180deg, #0f1724 0%, #071228 60%);
 	color: #e6eef8;
 }
