@@ -1,37 +1,43 @@
+/* Đặt font chữ mặc định và màu chữ gốc */
 :root {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	color: #111;
 }
 
+/* Cài đặt chung cho body: bỏ margin mặc định, chỉnh khoảng dòng, và nền chuyển màu */
 body {
-	margin: 0;
+	margin: 0; 
 	line-height: 1.5;
 	background: linear-gradient(180deg, #0f1724 0%, #071228 60%);
 	color: #e6eef8;
 }
 
+/* Header dùng màu nền gradient, chữ trắng, padding thoáng */
 header {
 	background: linear-gradient(90deg, #6a1b9a, #8e24aa);
 	color: #fff;
 	padding: 1rem;
 }
 
+/* Chứa nội dung header theo dạng flex, căn giữa theo chiều dọc, trải đều hai bên */
 header .container {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 1rem;
+	gap: 5px;
 	max-width: 1100px;
 	margin: 0 auto;
 }
 
+/* Liên kết trong menu: không gạch chân, màu sáng và đậm hơn */
 nav a {
 	color: rgba(255, 255, 255, 0.95);
 	text-decoration: none;
-	margin-left: 0.75rem;
+	padding: 5px;
 	font-weight: 600;
 }
 
+/* Khu vực nội dung chính: căn giữa và có nền mờ gradient */
 main {
 	max-width: 1100px;
 	margin: 1.25rem auto;
@@ -40,21 +46,26 @@ main {
 	border-radius: 8px;
 }
 
+/* Màu tiêu đề trắng để nổi bật trên nền tối */
 h2,
 h3 {
 	color: #fff;
 }
 
+/* Đoạn văn giới thiệu: chữ màu sáng và to hơn */
 .intro p {
 	color: #cbd8ee;
+	font-size: 20px;
 }
 
+/* Vùng sản phẩm dạng lưới tự co kích thước tùy theo màn hình */
 .products {
-	display: grid;
+	display: grid; /* Hiển thị dạng lưới */
 	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 	gap: 1rem;
 }
 
+/* Bố cục từng sản phẩm: có viền mờ, bo góc nhẹ, nền gradient mờ */
 article {
 	border: 1px solid rgba(255, 255, 255, 0.06);
 	padding: 0.75rem;
@@ -62,33 +73,38 @@ article {
 	background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
 }
 
+/* Ảnh sản phẩm: fit đúng khung, bo góc và cố định chiều cao */
 article img {
 	max-width: 100%;
 	border-radius: 6px;
-	display: block;
+	display: block; /* Loại bỏ khoảng trắng dưới ảnh */
 	margin-bottom: 0.5rem;
 	height: 200px;
 	width:  400px;
 	object-fit: cover;
 }
 
+/* Giá sản phẩm: màu vàng nổi bật và đậm */
 .price {
 	font-weight: 800;
 	color: #ffd54f;
 	font-size: 25px;
 }
 
+/* Form dạng lưới, các ô cách nhau 1 khoảng */
 form {
 	display: grid;
-	gap: 0.5rem;
+	gap: 0.5rem; /*rem: khoảng cách giữa các ô trong form */
 	margin-top: 1rem;
 }
 
+/* Nhãn của input: chữ sáng nhẹ, dễ nhìn */
 label {
 	font-size: 0.95rem;
 	color: #dfeaff;
 }
 
+/* Ô nhập liệu: có viền mờ, nền tối trong và chữ trắng */
 input[type="text"],
 input[type="email"],
 textarea {
@@ -101,21 +117,24 @@ textarea {
 	color: #fff;
 }
 
+/* Màu placeholder nhạt để phân biệt với nội dung */
 input::placeholder,
 textarea::placeholder {
 	color: rgba(255, 255, 255, 0.6);
 }
 
+/* Nút bấm nền hồng nổi bật, chữ trắng và bo góc */
 button {
 	background: #ff4081;
 	color: #fff;
 	padding: 0.6rem 1rem;
 	border: none;
 	border-radius: 6px;
-	cursor: pointer;
+	cursor: pointer; /* Con trỏ chuột khi hover */
 	font-weight: 700;
 }
 
+/* Footer căn giữa, màu chữ nhạt và nền trong */
 footer {
 	background: transparent;
 	padding: 0.75rem;
@@ -124,7 +143,7 @@ footer {
 	margin-top: 1rem;
 }
 
-
+/* Chỉnh font tiêu đề và mô tả sản phẩm */
 article h3{
 	font-size: 30px;
 }
@@ -133,11 +152,10 @@ article p{
 	font-size: 20px;
 }
 
-
+/* Responsive cho màn hình nhỏ: header xếp cột */
 @media (max-width: 480px) {
 	header .container {
 		flex-direction: column;
 		align-items: flex-start;
 	}
 }
-
