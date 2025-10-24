@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng Game Anime</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Cửa hàng Game Anime</h1>
+            <nav aria-label="Điều hướng chính">
+                <a href="#">Trang chủ</a>
+                <a href="#products">Trò chơi</a>
+                <a href="#news">Tin tức</a>
+                <a href="#contact">Liên hệ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section aria-labelledby="intro" class="intro">
+            <h2 id="intro">Chào mừng đến với Cửa hàng Game Anime</h2>
+            <p>Kho trò chơi phong cách anime, từ visual novel lãng mạn đến hành động mecha kịch tính. Khám phá, tải về và trải nghiệm thế giới anime ngay tại đây!</p>
+        </section>
+
+        <section id="products" aria-labelledby="products-heading">
+            <h2 id="products-heading">Trò chơi tiêu biểu</h2>
+            <div class="products">
+                <article>
+                    <img src="https://cdn-media.sforum.vn/storage/app/media/wp-content/uploads/2023/08/genshin-impact-cung-menh-thap-manh-nhat-6.jpg" alt="GI">
+                    <h3>Genshin Impact</h3>
+                    <p>Genshin Impact - Game hành động phiêu lưu thế giới mở</p>
+                    <p class="price">249.000 ₫</p>
+                </article>
+
+                <article>
+                    <img src="https://cdn-media.sforum.vn/storage/app/media/bookgrinder/zenless-zone-zero-ne-tranh-phan-don-1.jpg" alt="Zenless Zone Zero - Đô thị kỳ ảo">
+                    <h3>Zenless Zone Zero</h3>
+                    <p>Zenless Zone Zero - Khám phá một thành phố hậu tận thế giả tưởng</p>
+                    <p class="price">179.000 ₫</p>
+                </article>
+
+                <article>
+                    <img src="https://static.wikitide.net/strinovawiki/thumb/2/21/Strinova_Cover.jpg/800px-Strinova_Cover.jpg" alt="Strinova - Game bắn súng chiến thuật">
+                    <h3>Strinova</h3>
+                    <p>Strinova - Game bắn súng chiến thuật với cơ chế độc đáo và đồ họa anime tuyệt đẹp.</p>
+                    <p class="price">100.000 ₫</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Liên hệ / Đăng ký nhận tin</h2>
+            <form id="contact-form" action="#" method="post">
+                <div>
+                    <label for="name">Họ và tên</label>
+                    <input type="text" id="name" name="name" placeholder="Nguyễn Văn A" required>
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                </div>
+
+                <div>
+                    <label for="message">Nội dung</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Viết lời nhắn..." required></textarea>
+                </div>
+
+                <div>
+                    <button type="submit">Gửi</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Cửa hàng Game Anime — Địa chỉ: 7/18 Khu Otaku, Thành phố. Mọi quyền được bảo lưu.</p>
+    </footer>
+</body>
+</html>
